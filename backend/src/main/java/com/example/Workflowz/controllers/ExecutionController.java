@@ -12,34 +12,6 @@ import java.util.List;
 import java.util.Map;
 
 
-//
-//import javafx.util.Pair; // Use this if you are on Java 17 or later
-//
-//private Map<String, List<Pair<String, Number>>> generateGraph(List<WorkflowstepresultModel> stepResults) {
-//    Map<String, List<Pair<String, Number>>> graph = new HashMap<>();
-//
-//    for (WorkflowstepresultModel result : stepResults) {
-//        String actionName = result.getAction().getName();
-//        String activityName = result.getActivity().getName();
-//        Number flag = result.isStopFlag() ? 1 : 0; // Assuming 1 for stopped and 0 for not stopped
-//
-//        graph.putIfAbsent(actionName, new ArrayList<>());
-//        graph.get(actionName).add(new Pair<>(activityName, flag));
-//    }
-//
-//    return graph;
-//}
-//
-//public ResponseEntity<Map<String, List<Pair<String, Number>>>> getWorkflowGraph(Long workflowId) {
-//    List<WorkflowstepresultModel> stepResults = getExecutionLogs(workflowId);
-//    Map<String, List<Pair<String, Number>>> graph = generateGraph(stepResults);
-//    return ResponseEntity.ok(graph);
-//}
-
-
-
-
-
 @RestController
 @RequestMapping("/execution")
 public class ExecutionController {
