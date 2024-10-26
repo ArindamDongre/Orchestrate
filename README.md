@@ -59,4 +59,32 @@ The Orchestrate is a Spring Boot and React-based workflow management tool design
    ```bash
    npm run start
    ```
+   
+## API Endpoints
 
+### Workflows
+- **GET** `/workflows`: Fetch all workflows
+- **GET** `/workflows/{id}`: Fetch a workflow by ID
+- **POST** `/workflows`: Create a new workflow
+- **PUT** `/workflows/{id}`: Update an existing workflow
+- **DELETE** `/workflows/{id}`: Delete a workflow
+
+### Actions
+- **GET** `/actions`: Fetch all actions
+- **GET** `/actions/{id}`: Fetch an action by ID
+- **POST** `/actions`: Create a new action
+- **PUT** `/actions/{id}`: Update an action
+- **DELETE** `/actions/{id}`: Delete an action
+
+### Activities
+- **GET** `/activities`: Fetch all activities
+- **GET** `/activities/{id}`: Fetch an activity by ID
+- **POST** `/activities`: Create a new activity
+- **PUT** `/activities/{id}`: Update an activity
+- **DELETE** `/activities/{id}`: Delete an activity
+
+### Execution
+- **POST** `/execution/start/{workflowId}`: Execute the workflow steps and generate a dynamic graph structure for frontend visualization.
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request to contribute to this project.
